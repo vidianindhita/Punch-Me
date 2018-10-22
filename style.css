@@ -1,0 +1,262 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+.container {
+	margin: auto;
+	background-color: #000000;
+}
+
+.title {
+	margin-top: 70px;
+	background-color: #000000;
+}
+
+.buttonPlay {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+h1 {
+	text-align: center;
+	font-family: Lato;
+	color: #fff;
+	font-weight: 100;
+}
+
+p {
+	text-align: center;
+	font-family: Lato;
+	color: #fff;
+	font-weight: 100;
+}
+
+a {
+    color: #fff;
+}
+
+.patatap, .p5Canvas {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.switch input {
+	display: none;
+	text-align: center;
+	}
+
+.slider {
+  	position: absolute;
+  	cursor: pointer;
+	background-color: #ccc;
+  	-webkit-transition: .4s;
+  	transition: .4s;
+  	width: 100px;
+  	height: 54px;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 46px;
+  width: 46px;
+  left: 4px;
+  bottom: 4px;
+  top: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(46px);
+  -ms-transform: translateX(46px);
+  transform: translateX(46px);
+}
+
+.EyeRight input[type=checkbox] {
+    display:none;
+    z-index: 10;
+    left: 50px;
+    top: 530px;
+    position: absolute;
+}
+
+.EyeRight input[type=checkbox] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background: Transparent;
+    /*background:url("assets/image/eye-right.jpg") no-repeat;*/
+    height: 33px;
+    width: 55px;
+    background-size: 100%;
+    z-index: 10;
+    left: 562px;
+    /*bottom: 130px;*/
+    top: 530px;
+    position: absolute;
+}
+
+.EyeRight input[type=checkbox]:checked + label {
+    background:url("assets/image/eye-right-after.jpg") no-repeat;
+    height: 33px;
+    width: 55px;
+    display:inline-block;
+    background-size: 100%;
+    z-index: 10;
+    left: 562px;
+    top: 530px;
+    /*bottom: 130px;*/
+    position: absolute;
+}
+
+.EyeLeft input[type=checkbox] {
+    display:none;
+    z-index: 99;
+    left: 541px;
+    top: 535px;
+    position: absolute;
+}
+
+.EyeLeft input[type=checkbox] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background: Transparent;
+    /*background:url("assets/image/eye-left.jpg") no-repeat;*/
+    height: 33px;
+    width: 55px;
+    background-size: 100%;
+    z-index: 99;
+    left: 621px;
+    /*bottom: 10px;*/
+    top: 535px;
+    position: absolute;
+}
+
+.EyeLeft input[type=checkbox]:checked + label {
+    background:url("assets/image/eye-left-after.jpg") no-repeat;
+    height: 33px;
+    width: 55px;
+    display:inline-block;
+    background-size: 100%;
+    z-index: 99;
+    left: 621px;
+    /*bottom: 10px;*/
+    top: 535px;
+    position: absolute;
+}
+
+.MustacheRight input[type=checkbox] {
+    display:none;
+    z-index: 99;
+    left: 486px;
+    top: 570px;
+    position: absolute;
+}
+
+.MustacheRight input[type=checkbox] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background: Transparent;
+    /*background:url("assets/image/moustache-right.jpg") no-repeat;*/
+    height: 97px;
+    width: 131px;
+    background-size: 100%;
+    z-index: 99;
+    left: 486px;
+    top: 570px;
+    position: absolute;
+}
+
+.MustacheRight input[type=checkbox]:checked + label {
+    background:url("assets/image/moustache-right-after.png") no-repeat;
+    height: 97px;
+    width: 131px;
+    display:inline-block;
+    background-size: 100%;
+    z-index: 99;
+    left: 486px;
+    top: 570px;
+    position: absolute;
+}
+
+.MustacheLeft input[type=checkbox] {
+    display:none;
+    z-index: 99;
+    left: 542px;
+    top: 570px;
+    position: absolute;
+}
+
+.MustacheLeft input[type=checkbox] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background: Transparent;
+    /*background:url("assets/image/moustache-left.jpg") no-repeat;*/
+    height: 77px;
+    width: 131px;
+    background-size: 100%;
+    z-index: 99;
+    left: 629px;
+    top: 580px;
+    position: absolute;
+}
+
+.MustacheLeft input[type=checkbox]:checked + label {
+    background:url("assets/image/moustache-left-after.png") no-repeat;
+    height: 77px;
+    width: 131px;
+    display:inline-block;
+    background-size: 90%;
+    z-index: 99;
+    left: 629px;
+    top: 580px;
+    position: absolute;
+}
+
+.Nose input[type=checkbox] {
+    display:none;
+    z-index: 99;
+    left: 514px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.Nose input[type=checkbox] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background: Transparent;
+    /*background:url("assets/image/nose.jpg") no-repeat;*/
+    height: 33px;
+    width: 55px;
+    background-size: 100%;
+    z-index: 99;
+    left: 587px;
+    top: 562px;
+    position: absolute;
+}
+
+.Nose input[type=checkbox]:checked + label {
+    background:url("assets/image/nose-after.jpg") no-repeat;
+    height: 33px;
+    width: 55px;
+    display:inline-block;
+    background-size: 100%;
+    z-index: 99;
+    left: 587px;
+    top: 562px;
+    position: absolute;
+}
